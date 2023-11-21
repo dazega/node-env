@@ -1,14 +1,14 @@
 {
   "database": {
     "development": {
-      "username": "root",
+      "username": "postgres",
       "password": "password",
       "database": "density",
       "host": "127.0.0.1",
       "dialect": "postgres"
     },
     "production": {
-      "username": "root",
+      "username": "postgres",
       "password": "password",
       "database": "density",
       "host": "127.0.0.1",
