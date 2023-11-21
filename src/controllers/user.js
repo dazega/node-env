@@ -3,6 +3,12 @@ const userServices = require('../services/user');
 
 const router = Router();
 
+router.get('/', async (req, res) => {
+    const users = await userServices.getUsers();
+
+    return res.status(200).json({ users });
+});
+
 router.post('/', async (req, res) => {
     const { firstName, lastName, password } = req.body;
     const newUser = await userServices.createUser({ firstName, lastName, password });
